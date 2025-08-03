@@ -1,3 +1,7 @@
+main h2 {
+  text-align: center;
+  margin-top: 0;
+}
 hr {
   border: none;
   height: 4px;
@@ -11,7 +15,7 @@ hr {
 }
 body {
   font-family: 'Inter', Arial, sans-serif;
-  background: #ccc6d5;
+  background: #d9d3e1;
   margin: 0;
   color: #222;
 }

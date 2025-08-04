@@ -22,8 +22,13 @@
             <hr/>
         </header>
         <main>
-            <h2>Google Data Usage</h2>
-            <p>idk dude</p>
+            <h2>Google OAuth Data Usage Disclosure</h2>
+            <section>
+                ProphecyML uses Google OAuth 2.0 as its identity provider. Authentication is fully delegated to Google, meaning we do not store or manage user passwords or credentials.
+                Upon login, Google provides a secure identity token, which is passed to Azure AD B2C to issue an access token for our backend API. This token allows us to identify users and enforce user-based rate limits.
+                We access only your name and email address from Google to distinguish users within the app. We do not access any other personal data, and we do not share or sell user information.
+                In the future, ProphecyML may allow users to save preferences such as stock watchlists. Any such data will be stored securely and used solely to enhance your experience.
+            </section>
         </main>
         <footer>
             <p>&copy; Prophecy.ML™ © 2025 Glen Anderson. All Rights Reserved.</p>

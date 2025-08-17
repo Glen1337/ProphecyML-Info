@@ -87,3 +87,47 @@ footer {
   color: #888;
   font-size: 0.95rem;
 }
+
+.tooltip-container {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  font-family: sans-serif;
+}
+
+.tooltip-icon {
+  background-color: #0078D4; /* Microsoft blue */
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 12px;
+  margin-left: 4px;
+  font-weight: bold;
+}
+
+.tooltip-box {
+  visibility: hidden;
+  background-color: #333;
+  color: #fff;
+  text-align: left;
+  padding: 8px;
+  border-radius: 4px;
+  position: absolute;
+  top: 120%;
+  left: 0;
+  z-index: 10;
+  width: 250px;
+  font-size: 13px;
+  line-height: 1.4;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.tooltip-container:hover .tooltip-box,
+.tooltip-container:focus-within .tooltip-box {
+  visibility: visible;
+}
+
+.tooltip-container:focus-within .tooltip-icon {
+  outline: 2px solid #0078D4;
+}
